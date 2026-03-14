@@ -717,8 +717,8 @@ footer {
     .hero-title { font-size: 3rem; }
     .hero-container {
         flex-direction: column-reverse; /* Usually for mobile text on bottom, but we have text on top */
-        padding-top: 160px; /* Increased to keep picture away from top logo */
-        padding-bottom: 6rem; /* Added padding to push buttons away from white transition */
+        padding-top: 220px; /* Increased further to keep picture away from top gold text */
+        padding-bottom: 10rem; /* Increased padding to push buttons further away from white transition */
         text-align: center;
     }
     
@@ -791,6 +791,6 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-    .hero-buttons .btn { width: 100%; text-align: center; }
+    .hero-buttons .btn { width: 100%; text-align: center; margin-bottom: 1rem; }
     .contact-form { padding: 1.5rem; }
 }
