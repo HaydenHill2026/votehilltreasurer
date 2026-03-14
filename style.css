@@ -709,10 +709,16 @@ footer {
 
 /* ---- RESPONSIVE DESIGN ---- */
 @media (max-width: 992px) {
+    #hero {
+        height: auto;
+        min-height: 100vh;
+    }
+    
     .hero-title { font-size: 3rem; }
     .hero-container {
         flex-direction: column-reverse; /* Usually for mobile text on bottom, but we have text on top */
-        padding-top: 120px;
+        padding-top: 160px; /* Increased to keep picture away from top logo */
+        padding-bottom: 6rem; /* Added padding to push buttons away from white transition */
         text-align: center;
     }
     
