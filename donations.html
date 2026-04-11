@@ -46,11 +46,12 @@
             }
         }
         .platform-card {
-            background: var(--white);
+            background: var(--bg-white);
             border: 2px dashed #eaeaea;
             border-radius: 8px;
             padding: 40px 30px;
-            flex: 1;
+            max-width: 500px;
+            margin: 0 auto;
             transition: border-color 0.3s;
         }
         .platform-card:hover {
@@ -145,14 +146,6 @@
                     <h3>Donate via WinRed</h3>
                     <p>Support the campaign using the WinRed platform. Secure, fast, and easy.</p>
                     <a href="#" class="btn-donate">Setup WinRed Link</a>
-                </div>
-
-                <!-- Anedot Placeholder -->
-                <div class="platform-card">
-                    <i class="fas fa-hand-holding-usd fa-3x"></i>
-                    <h3>Donate via Anedot</h3>
-                    <p>Make a trusted contribution using Anedot. It's safe and compliant.</p>
-                    <a href="#" class="btn-donate" style="background-color: var(--primary-blue);">Setup Anedot Link</a>
                 </div>
             </div>
 
