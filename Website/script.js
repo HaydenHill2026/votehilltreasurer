@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     animatedElements.forEach(el => observer.observe(el));
 
-    // ---- CONTACT FORM MOCK SUBMIT ----
+    // ---- CONTACT FORM REAL SUBMIT ----
     const form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', (e) => {
@@ -89,8 +89,22 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             btn.disabled = true;
             
-            // Simulate network request
-            setTimeout(() => {
+            // Real network request using Formsubmit
+            fetch("https://formsubmit.co/ajax/HaydenHill2026@protonmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    interest: document.getElementById('interest').value,
+                    _subject: "New Campaign Website Submission!"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
                 btn.innerHTML = '<i class="fas fa-check"></i> Thanks for joining!';
                 btn.classList.replace('btn-primary', 'btn-outline');
                 btn.style.backgroundColor = 'var(--primary-blue)';
@@ -103,7 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.style.backgroundColor = '';
                     btn.disabled = false;
                 }, 3000);
-            }, 1000);
+            })
+            .catch(error => {
+                console.error(error);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error. Try Again.';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 3000);
+            });
         });
     }
 });
