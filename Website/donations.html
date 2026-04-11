@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Hayden Hill for Washington County Treasurer</title>
+    <meta name="description" content="Support Hayden Hill for Washington County Arkansas Treasurer by making a donation today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .donations-header {
+            padding: 150px 0 60px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+        }
+        .donate-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .donate-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: var(--text-color);
+        }
+        .donation-platforms {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        @media (min-width: 768px) {
+            .donation-platforms {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .platform-card {
+            background: var(--white);
+            border: 2px dashed #eaeaea;
+            border-radius: 8px;
+            padding: 40px 30px;
+            flex: 1;
+            transition: border-color 0.3s;
+        }
+        .platform-card:hover {
+            border-color: var(--primary-color);
+        }
+        .platform-card i {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .platform-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        .platform-card p {
+            font-size: 0.95rem;
+            color: var(--gray-dark);
+            margin-bottom: 20px;
+        }
+        .btn-donate {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-donate:hover {
+            background-color: #a81c1c;
+        }
+        .irs-disclaimer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">HAYDEN HILL</span>
+                <span class="logo-title">FOR TREASURER</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="nav-link">Meet Hayden</a></li>
+                <li><a href="index.html#priorities" class="nav-link">Priorities</a></li>
+                <li><a href="endorsements.html" class="nav-link">Endorsements</a></li>
+                <li><a href="index.html#commitment" class="nav-link">Commitment</a></li>
+                <li><a href="donations.html" class="nav-link">Donate</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary nav-btn">Get Involved</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="donations-header">
+        <div class="container">
+            <h1 class="section-title title-white">Support the <span class="highlight-red">Campaign</span></h1>
+            <div class="title-underline center"></div>
+            <p class="section-subtitle text-white-light">Every contribution helps bring strong, transparent leadership to Washington County.</p>
+        </div>
+    </header>
+
+    <!-- Donation Section -->
+    <section class="section">
+        <div class="container donate-container">
+            <p class="donate-text">
+                Your support is vital to our success. Whether you can give $10 or $1,000, your contribution helps us reach voters and spread our message of fiscal responsibility and total transparency.
+            </p>
+
+            <div class="donation-platforms">
+                <!-- WinRed Placeholder -->
+                <div class="platform-card">
+                    <i class="fas fa-flag-usa fa-3x"></i>
+                    <h3>Donate via WinRed</h3>
+                    <p>Support the campaign using the WinRed platform. Secure, fast, and easy.</p>
+                    <a href="#" class="btn-donate">Setup WinRed Link</a>
+                </div>
+
+                <!-- Anedot Placeholder -->
+                <div class="platform-card">
+                    <i class="fas fa-hand-holding-usd fa-3x"></i>
+                    <h3>Donate via Anedot</h3>
+                    <p>Make a trusted contribution using Anedot. It's safe and compliant.</p>
+                    <a href="#" class="btn-donate" style="background-color: var(--secondary-color);">Setup Anedot Link</a>
+                </div>
+            </div>
+
+            <!-- Required Legal Disclaimer -->
+            <div class="irs-disclaimer">
+                <p><strong>Important Campaign Finance Notice</strong></p>
+                <p>Contributions to Hayden Hill for Washington County Treasurer are not tax-deductible for federal income tax purposes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <div class="container footer-flex">
+                <p>&copy; 2026 Hayden Hill. All Rights Reserved.</p>
+                <div class="paid-for">
+                    Paid for by the campaign to elect Hayden Hill for Washington County Treasurer.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
