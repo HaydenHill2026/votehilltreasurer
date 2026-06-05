@@ -707,6 +707,41 @@ footer {
     transform: translate(0);
 }
 
+/* ---- ENDORSEMENTS ---- */
+.endorsements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.endorsement-item {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-red);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.endorsement-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    background-color: var(--bg-white);
+}
+
+.endorsement-name {
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.endorsement-title {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
 /* ---- RESPONSIVE DESIGN ---- */
 @media (max-width: 992px) {
     #hero {
